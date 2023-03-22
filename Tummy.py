@@ -20,7 +20,7 @@ def add_bg_from_url():
          <style>
          .stApp {{
              #background-image: url("https://st2.depositphotos.com/1001941/6345/v/600/depositphotos_63452319-stock-illustration-cricket-sports-concept-with-red.jpg");
-             background-image: url("https://www.shutterstock.com/image-illustration/india-vs-australia-cricket-balls-flag-2070280562");
+             background-image: url("https://images.indiafantasy.com/wp-content/uploads/20230320134713/IND-vs-AUS-Dream11-3rd-ODI.jpg");
              background-attachment: fixed;
              background-size: cover
          }}
