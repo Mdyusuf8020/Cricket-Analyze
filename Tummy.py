@@ -117,7 +117,7 @@ if menu == 'Team Scorecard':
     Teams = ["IND","AUS"]
     Team_Selection = st.selectbox('Select the Team:', options= Teams)
 
-    if Team_Selection == 'WI':
+    if Team_Selection == 'IND':
     
         st.markdown(
             """
@@ -133,7 +133,7 @@ if menu == 'Team Scorecard':
         st.dataframe(total_df_in1)
         st.dataframe(bowlers_df_in1)
 
-    if Team_Selection == 'RSA':
+    if Team_Selection == 'AUS':
          
          st.markdown(
             """
