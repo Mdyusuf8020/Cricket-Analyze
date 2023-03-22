@@ -92,7 +92,13 @@ if menu == 'Live Score':
         st.dataframe(df_decision)
     else:
         print("text not found.")
-
+        
+    final_res = soup.find("div", {"class": "cb-col cb-col-100 cb-min-stts cb-text-complete" })
+    if final_res is not None:
+        df_final_res = pd.DataFrame([final_res.text], columns=['Result'])
+        st.dataframe(df_final_res)
+    else:
+        pass
 
 #-------------------------------------------------------------------------------------------#
 
