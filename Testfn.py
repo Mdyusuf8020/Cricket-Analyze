@@ -7,9 +7,8 @@ import warnings
 
 # --------------------------- Innings 1 data -----------------------------------
 
-def Team2():
+def Team1():
         url = "https://www.cricbuzz.com/live-cricket-scorecard/60042/ind-vs-aus-3rd-odi-australia-tour-of-india-2023"
-        
         response = requests.get(url)
         soup = BeautifulSoup(response.content, "html.parser")
 
@@ -71,7 +70,7 @@ def innings1(df_innings1):
 
 # --------------------------- Innings 2 data -----------------------------------
 
-def Team1():
+def Team2():
         url = "https://www.cricbuzz.com/live-cricket-scorecard/60042/ind-vs-aus-3rd-odi-australia-tour-of-india-2023"
         response = requests.get(url)
         soup = BeautifulSoup(response.content, "html.parser")
