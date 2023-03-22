@@ -82,7 +82,7 @@ if menu == 'Live Score':
         df_live = pd.DataFrame(live_score_dict)
 
         # Print the dataframe
-        print(df_live)
+        st.dataframe(df_live)
     else:
         print("Live score not found.")
 
@@ -92,7 +92,7 @@ if menu == 'Live Score':
     else:
         print("text not found.")
 
-    st.dataframe(df_live)
+    
 
 #-------------------------------------------------------------------------------------------#
 
