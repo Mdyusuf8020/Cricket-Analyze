@@ -19,7 +19,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://st2.depositphotos.com/1001941/6345/v/600/depositphotos_63452319-stock-illustration-cricket-sports-concept-with-red.jpg");
+             background-image: url("https://pbs.twimg.com/profile_banners/1026332905/1679232135/1080x360");
              background-attachment: fixed;
              background-size: cover
          }}
