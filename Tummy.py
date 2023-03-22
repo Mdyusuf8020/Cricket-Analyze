@@ -32,7 +32,7 @@ def add_bg_from_url():
 add_bg_from_url() 
 # -------------------------------- lottie bird animation -------------------------------------------- 
 
-st.markdown("<h1 style='text-align: center; color: black; '>Cricket Analyze</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: black; background-color: white; '>Cricket Analyze</h1>", unsafe_allow_html=True)
 
 def load_lottieURl(url: str):
     r = requests.get(url)
