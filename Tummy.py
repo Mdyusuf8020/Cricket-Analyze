@@ -20,7 +20,7 @@ def add_bg_from_url():
          <style>
          .stApp {{
              #background-image: url("https://st2.depositphotos.com/1001941/6345/v/600/depositphotos_63452319-stock-illustration-cricket-sports-concept-with-red.jpg");
-             background-image: url("https://www.shutterstock.com/image-photo/india-vs-australia-australian-smoke-flags-1364817098");
+             background-image: url("https://www.shutterstock.com/image-illustration/india-vs-australia-cricket-balls-flag-2070280562");
              background-attachment: fixed;
              background-size: cover
          }}
