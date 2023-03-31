@@ -200,7 +200,7 @@ if menu == 'Analysis':
                         Bowl_1,
                         x='Bowler',
                         y='W',
-                        color_discrete_sequence=["yellow"],
+                        color_discrete_sequence=['#FFD700'],
                         title='Bowling Analyze',
                         hover_data=['W','ECO','Bowler']
                     )
@@ -213,7 +213,7 @@ if menu == 'Analysis':
                         ECO_1,
                         x='Bowler',
                         y='ECO',
-                        color_discrete_sequence=["yellow"],
+                        color_discrete_sequence=['#FFD700'],
                         title='Bowling Analyze',
                         hover_data=['W','ECO','Bowler']
                     )
@@ -223,8 +223,8 @@ if menu == 'Analysis':
 
                 fig = go.Figure(go.Scatter(x = batsmen_df_in1['Batsman'],
                                            y = batsmen_df_in1['SR'],
-                                           line=dict(color='yellow'),
-                                           marker=dict(color='green'),
+                                           line=dict(color='#FFD700'),
+                                           marker=dict(color='#1C2C5B'),
                                            mode = 'lines+markers'))
                 st.plotly_chart(fig)
              
@@ -248,8 +248,8 @@ if menu == 'Analysis':
             if Analyze_Selection == "Top 5 Run Scorer":
                 if batsmen_df_in2 is not None:
                     # Create a scatter plot of the number of balls vs. run rate
-                    bar_trace = go.Bar(x=Runs_2["Batsman"], y=Runs_2["Runs"], marker=dict(color="blue"))
-                    line_trace = go.Scatter(x=Runs_2["Batsman"], y=Runs_2["Runs"],line=dict(color='orange'), yaxis='y2')
+                    bar_trace = go.Bar(x=Runs_2["Batsman"], y=Runs_2["Runs"], marker=dict(color='#1B2133'))
+                    line_trace = go.Scatter(x=Runs_2["Batsman"], y=Runs_2["Runs"],line=dict(color='#DBBE6E'), yaxis='y2')
 
                     layout = go.Layout(
                         title='Bar and Line Chart with Dual Axis',
@@ -267,7 +267,7 @@ if menu == 'Analysis':
                     Bowl_2,
                     x='Bowler',
                     y='W', 
-                    color_discrete_sequence=["blue",'orange'],
+                    color_discrete_sequence=['#1B2133','#DBBE6E'],
                     title='Bowling Analyze',
                     hover_data=['W','ECO','Bowler']
                 )
@@ -280,7 +280,7 @@ if menu == 'Analysis':
                     ECO_2,
                     x='Bowler',
                     y='ECO',
-                    color_discrete_sequence=["blue",'orange'],
+                    color_discrete_sequence=['#1B2133','#DBBE6E'],
                     title='Bowling Analyze',
                     hover_data=['W','ECO','Bowler']
                 )
@@ -290,8 +290,8 @@ if menu == 'Analysis':
                 if batsmen_df_in2 is not None:
                     fig = go.Figure(go.Scatter(x = batsmen_df_in2['Batsman'],
                                             y = batsmen_df_in2['SR'],
-                                            line=dict(color='Blue'),
-                                            marker=dict(color='orange') ,
+                                            line=dict(color='#1B2133'),
+                                            marker=dict(color='#DBBE6E'') ,
                                             mode = 'lines+markers'))
                     st.plotly_chart(fig)
                 
