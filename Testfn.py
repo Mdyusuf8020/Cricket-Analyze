@@ -20,7 +20,7 @@ def Team1():
                 writer = csv.writer(csvfile)
                 
                 # Write the header row
-                writer.writerow(['Batsman', 'Dismissal', 'Runs', 'Balls', '4s', '6s', 'SR',''])
+                writer.writerow(['Batsman', 'Dismissal', 'Runs', 'Balls', '4s', '6s', 'SR','',""])
 
                 # Write the data rows
                 for row in rows:
@@ -84,7 +84,7 @@ def Team2():
                 writer = csv.writer(csvfile)
                 
                 # Write the header row
-                writer.writerow(['Batsman', 'Dismissal', 'Runs', 'Balls', '4s', '6s', 'SR',''])
+                writer.writerow(['Batsman', 'Dismissal', 'Runs', 'Balls', '4s', '6s', 'SR','',''])
 
                 # Write the data rows
                 for row in rows:
