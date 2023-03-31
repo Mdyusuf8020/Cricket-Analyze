@@ -127,7 +127,7 @@ if menu == 'Team Scorecard':
          st.markdown(
             """
             <button class="button-with-logo">
-                <img src="https://branditechture.agency/brand-logos/wp-content/uploads/wpdm-cache/Gujarat-Titans-900x0.png" alt="Logo" width="600" height="300">  
+                <img src="https://www.iplticket.co.in/wp-content/uploads/2022/03/Gujarat_Titans_logo-300x215.jpeg" alt="Logo" width="600" height="300">  
             </button>
             """
             , unsafe_allow_html=True
