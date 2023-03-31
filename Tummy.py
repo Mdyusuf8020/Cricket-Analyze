@@ -113,7 +113,7 @@ if menu == 'Team Scorecard':
         st.markdown(
             """
             <button class="button-with-logo">
-                <img src="https://branditechture.agency/brand-logos/wp-content/uploads/wpdm-cache/Gujarat-Titans-900x0.png" alt="Logo" width="600" height="300">  
+                <img src="https://wallpapercave.com/dwp2x/wp2496940.jpg" alt="Logo" width="600" height="300">  
             </button>
             """
             , unsafe_allow_html=True)
@@ -127,7 +127,7 @@ if menu == 'Team Scorecard':
          st.markdown(
             """
             <button class="button-with-logo">
-                <img src="https://www.gujarattitansipl.com/" alt="Logo" width="600" height="300">  
+                <img src="https://branditechture.agency/brand-logos/wp-content/uploads/wpdm-cache/Gujarat-Titans-900x0.png" alt="Logo" width="600" height="300">  
             </button>
             """
             , unsafe_allow_html=True
