@@ -20,7 +20,7 @@ def add_bg_from_url():
          <style>
          .stApp {{
              #background-image: url("https://st2.depositphotos.com/1001941/6345/v/600/depositphotos_63452319-stock-illustration-cricket-sports-concept-with-red.jpg");
-             background-image: url("https://wallpapershome.com/images/pages/pic_h/24245.jpg");
+             background-image: url("https://cdn.dnaindia.com/sites/default/files/styles/full/public/2023/03/31/2582506-whatsapp-image-2023-03-31-at-5.07.51-pm.jpeg");
              background-attachment: fixed;
              background-size: cover
          }}
