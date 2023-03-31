@@ -17,7 +17,7 @@ st.set_page_config(page_title = 'Cricket Analyze')
 """def add_bg_from_url():
     st.markdown(
          f"""
-         <style>
+         """<style>
          .stApp {{
              #background-image: url("https://st2.depositphotos.com/1001941/6345/v/600/depositphotos_63452319-stock-illustration-cricket-sports-concept-with-red.jpg");
              background-image: url("https://images.indiafantasy.com/wp-content/uploads/20230320134713/IND-vs-AUS-Dream11-3rd-ODI.jpg");
@@ -26,7 +26,7 @@ st.set_page_config(page_title = 'Cricket Analyze')
          }}
          </style>
          """,
-         unsafe_allow_html=True
+         """unsafe_allow_html=True
      )
 
 add_bg_from_url() """
