@@ -42,9 +42,9 @@ def load_lottieURl(url: str):
     return r.json()
 
 
-lottie_bird = load_lottieURl("https://assets8.lottiefiles.com/packages/lf20_Hw1OgduFe1.json")
+# lottie_bird = load_lottieURl("https://assets8.lottiefiles.com/packages/lf20_Hw1OgduFe1.json")
 
-st_lottie(lottie_bird, height=300, width=700, key='bird')
+# st_lottie(lottie_bird, height=300, width=700, key='bird')
 
 # -------------------------------- Streamlit Setups -------------------------------------------- 
 
