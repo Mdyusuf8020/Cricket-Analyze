@@ -127,7 +127,7 @@ if menu == 'Team Scorecard':
          st.markdown(
             """
             <button class="button-with-logo">
-                <img src="https://img.etimg.com/thumb/msid-59202287,width-300,height-225,imgsize-66221,,resizemode-75/.jpg" alt="Logo" width="600" height="300">  
+                <img src="https://www.gujarattitansipl.com/" alt="Logo" width="600" height="300">  
             </button>
             """
             , unsafe_allow_html=True
