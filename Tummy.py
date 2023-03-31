@@ -56,7 +56,7 @@ menu = option_menu(
                     icons=['activity', 'back',
                             'back', 'pie-chart'],
                     default_index=0,
-                    #orientation = "horizontal"
+                    orientation = "horizontal"
                     )
 
 if menu == 'Live Score':
