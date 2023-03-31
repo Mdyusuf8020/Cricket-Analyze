@@ -113,7 +113,7 @@ if menu == 'Team Scorecard':
         st.markdown(
             """
             <button class="button-with-logo">
-                <img src="https://static.toiimg.com/thumb/msid-80477273,imgsize-26736,width-400,resizemode-4/80477273.jpg" alt="Logo" width="600" height="300">  
+                <img src="https://wallpapercave.com/dwp2x/wp4166484.jpg" alt="Logo" width="600" height="300">  
             </button>
             """
             , unsafe_allow_html=True)
