@@ -112,7 +112,7 @@ with open('scorecard_innings2.csv', 'w', newline='') as csvfile:
                 writer = csv.writer(csvfile)
                 
                 # Write the header row
-                writer.writerow(['Batsman', 'Dismissal', 'Runs', 'Balls', '4s', '6s', 'SR',''])
+                writer.writerow(['Batsman', 'Dismissal', 'Runs', 'Balls', '4s', '6s', 'SR','',""])
 
 
 # 2nd innings
@@ -181,8 +181,8 @@ if menu == 'Analysis':
             if Analyze_Selection == "Top 5 Run Scorer":
 
                 # Create a scatter plot of the number of balls vs. run rate
-                bar_trace = go.Bar(x=Runs_1["Batsman"], y=Runs_1["Runs"],marker=dict(color='yellow'))
-                line_trace = go.Scatter(x=Runs_1["Batsman"], y=Runs_1["Runs"],line=dict(color='green'), yaxis='y2')
+                bar_trace = go.Bar(x=Runs_1["Batsman"], y=Runs_1["Runs"],marker=dict(color='#FFD700'))
+                line_trace = go.Scatter(x=Runs_1["Batsman"], y=Runs_1["Runs"],line=dict(color='#1C2C5B'), yaxis='y2')
 
                 layout = go.Layout(
                     title='Bar and Line Chart with Dual Axis',
