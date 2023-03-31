@@ -11,7 +11,7 @@ import plotly.graph_objects as go
 
 
 # -------------------------------- Page Title --------------------------------------------
-st.set_page_config(page_title = 'Cricket Analyze')
+#st.set_page_config(page_title = 'Cricket Analyze')
 
 # -------------------------------- Add BackGround image  --------------------------------------------
 def add_bg_from_url():
