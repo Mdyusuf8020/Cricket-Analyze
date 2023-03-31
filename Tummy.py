@@ -14,7 +14,7 @@ import plotly.graph_objects as go
 st.set_page_config(page_title = 'Cricket Analyze')
 
 # -------------------------------- Add BackGround image  --------------------------------------------
-def add_bg_from_url():
+"""def add_bg_from_url():
     st.markdown(
          f"""
          <style>
@@ -29,7 +29,7 @@ def add_bg_from_url():
          unsafe_allow_html=True
      )
 
-add_bg_from_url() 
+add_bg_from_url() """
 # -------------------------------- lottie bird animation -------------------------------------------- 
 
 st.markdown("<h1 style='text-align: center; color: black; background-color: white; '>Cricket Analyze</h1>", unsafe_allow_html=True)
