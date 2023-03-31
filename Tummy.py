@@ -104,10 +104,10 @@ batsmen_df_in2, extras_df_in2, total_df_in2, bowlers_df_in2 = innings2(df_inning
 
 
 if menu == 'Team Scorecard':
-    Teams = ["AUS","IND"]
+    Teams = ["CSK","GT"]
     Team_Selection = st.selectbox('Select the Team:', options= Teams)
 
-    if Team_Selection == 'AUS':
+    if Team_Selection == 'CSK':
     
      
         st.markdown(
@@ -123,7 +123,7 @@ if menu == 'Team Scorecard':
         st.dataframe(total_df_in1)
         st.dataframe(bowlers_df_in1)
 
-    if Team_Selection == 'IND':
+    if Team_Selection == 'GT':
          st.markdown(
             """
             <button class="button-with-logo">
@@ -142,11 +142,11 @@ if menu == 'Team Scorecard':
 
 if menu == 'Analysis':
             
-        Teams = ["AUS","IND"]
+        Teams = ["CSK","GT"]
 
         Team_Selection = st.selectbox('Select the Team:', options= Teams)
 
-        if Team_Selection == "AUS":
+        if Team_Selection == "CSK":
 
             Analyze = ["Top 5 Run Scorer",
                        "Top 5 Wicket Taker",
@@ -214,7 +214,7 @@ if menu == 'Analysis':
 
             #-----------------------------------------------------------------#
 
-        if Team_Selection == "IND":
+        if Team_Selection == "GT":
 
             Analyze = ["Top 5 Run Scorer",
                        "Top 5 Wicket Taker",
