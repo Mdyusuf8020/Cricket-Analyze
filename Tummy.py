@@ -291,7 +291,7 @@ if menu == 'Analysis':
                     fig = go.Figure(go.Scatter(x = batsmen_df_in2['Batsman'],
                                             y = batsmen_df_in2['SR'],
                                             line=dict(color='#1B2133'),
-                                            marker=dict(color='#DBBE6E'') ,
+                                            marker=dict(color='#DBBE6E'),
                                             mode = 'lines+markers'))
                     st.plotly_chart(fig)
                 
