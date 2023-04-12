@@ -135,7 +135,7 @@ if menu == 'Team Scorecard':
                 <img src="https://wallpapercave.com/dwp2x/wp2496940.jpg" alt="Logo" width="600" height="300">  
             </button>
             """
-        #    , unsafe_allow_html=True)
+            #, unsafe_allow_html=True)
         
         st.dataframe(batsmen_df_in1)
         st.dataframe(extras_df_in1)
@@ -150,7 +150,7 @@ if menu == 'Team Scorecard':
                 <img src="https://www.iplticket.co.in/wp-content/uploads/2022/03/Gujarat_Titans_logo-300x215.jpeg" alt="Logo" width="600" height="300">  
             </button>
             """
-         #   , unsafe_allow_html=True)
+            #, unsafe_allow_html=True)
         
          st.dataframe(batsmen_df_in2)
          st.dataframe(extras_df_in2)
