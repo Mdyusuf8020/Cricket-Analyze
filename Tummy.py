@@ -126,16 +126,7 @@ if menu == 'Team Scorecard':
     Teams = ["RR","CSK"]
     Team_Selection = st.selectbox('Select the Team:', options= Teams)
 
-    if Team_Selection == 'RR':
-    
-     
-        #st.markdown(
-            """
-            <button class="button-with-logo">
-                <img src="https://wallpapercave.com/dwp2x/wp2496940.jpg" alt="Logo" width="600" height="300">  
-            </button>
-            """
-            #, unsafe_allow_html=True)
+    if Team_Selection == 'RR'
         
         st.dataframe(batsmen_df_in1)
         st.dataframe(extras_df_in1)
@@ -143,15 +134,7 @@ if menu == 'Team Scorecard':
         st.dataframe(bowlers_df_in1)
 
     if Team_Selection == 'CSK':
-        
-        #st.markdown(
-            """
-            <button class="button-with-logo">
-                <img src="https://www.iplticket.co.in/wp-content/uploads/2022/03/Gujarat_Titans_logo-300x215.jpeg" alt="Logo" width="600" height="300">  
-            </button>
-            """
-            #, unsafe_allow_html=True)
-        
+          
          st.dataframe(batsmen_df_in2)
          st.dataframe(extras_df_in2)
          st.dataframe(total_df_in2)
@@ -297,6 +280,14 @@ if menu == 'Analysis':
                                             marker=dict(color='#1C2C5B'),
                                             mode = 'lines+markers'))
                     st.plotly_chart(fig)
-                
+ 
 
+
+#st.markdown(
+            """
+            <button class="button-with-logo">
+                <img src="https://www.iplticket.co.in/wp-content/uploads/2022/03/Gujarat_Titans_logo-300x215.jpeg" alt="Logo" width="600" height="300">  
+            </button>
+            """
+#            , unsafe_allow_html=True)
                 
