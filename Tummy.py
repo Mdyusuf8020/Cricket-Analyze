@@ -58,11 +58,12 @@ menu = option_menu(
                     default_index=0,
                     orientation = "horizontal"
                     )
+#-----------------------------------------------LIVE SCORES-----------------------------------------------------------------
 
 if menu == 'Live Score':
     #scrape = st.button("Cricket - LIVE SCORE")
 
-    url = "https://www.cricbuzz.com/live-cricket-scores/66204/dc-vs-gt-7th-match-indian-premier-league-2023"
+    url = "https://www.cricbuzz.com/live-cricket-scores/66250/rr-vs-csk-17th-match-indian-premier-league-2023"
     response = requests.get(url)
     html_content = response.content
 
