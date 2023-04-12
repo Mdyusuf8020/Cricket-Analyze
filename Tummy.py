@@ -183,8 +183,8 @@ if menu == 'Analysis':
             if Analyze_Selection == "Top 5 Run Scorer":
 
                 # Create a scatter plot of the number of balls vs. run rate
-                bar_trace = go.Bar(x=Runs_1["Batsman"], y=Runs_1["Runs"],marker=dict(color='#254AA5'))
-                line_trace = go.Scatter(x=Runs_1["Batsman"], y=Runs_1["Runs"],line=dict(color='#CBA92B'), yaxis='y2')
+                bar_trace = go.Bar(x=Runs_1["Batsman"], y=Runs_1["Runs"],marker=dict(color='#e73895'))
+                line_trace = go.Scatter(x=Runs_1["Batsman"], y=Runs_1["Runs"],line=dict(color='#254AA5'), yaxis='y2')
 
                 layout = go.Layout(
                     title='Bar and Line Chart with Dual Axis',
@@ -202,7 +202,7 @@ if menu == 'Analysis':
                         Bowl_1,
                         x='Bowler',
                         y='W',
-                        color_discrete_sequence=['#254AA5'],
+                        color_discrete_sequence=['#e73895'],
                         title='Bowling Analyze',
                         hover_data=['W','ECO','Bowler']
                     )
@@ -215,7 +215,7 @@ if menu == 'Analysis':
                         ECO_1,
                         x='Bowler',
                         y='ECO',
-                        color_discrete_sequence=['#254AA5'],
+                        color_discrete_sequence=['#e73895'],
                         title='Bowling Analyze',
                         hover_data=['W','ECO','Bowler']
                     )
@@ -225,8 +225,8 @@ if menu == 'Analysis':
 
                 fig = go.Figure(go.Scatter(x = batsmen_df_in1['Batsman'],
                                            y = batsmen_df_in1['SR'],
-                                           line=dict(color='#254AA5'),
-                                           marker=dict(color='#CBA92B'),
+                                           line=dict(color='#e73895'),
+                                           marker=dict(color='#254AA5'),
                                            mode = 'lines+markers'))
                 st.plotly_chart(fig)
              
