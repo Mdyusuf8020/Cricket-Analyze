@@ -126,7 +126,7 @@ if menu == 'Team Scorecard':
     Teams = ["RR","CSK"]
     Team_Selection = st.selectbox('Select the Team:', options= Teams)
 
-    if Team_Selection == 'RR'
+    if Team_Selection == 'RR':
         
         st.dataframe(batsmen_df_in1)
         st.dataframe(extras_df_in1)
