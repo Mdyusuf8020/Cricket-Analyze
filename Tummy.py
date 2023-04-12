@@ -202,7 +202,7 @@ if menu == 'Analysis':
                         Bowl_1,
                         x='Bowler',
                         y='W',
-                        color_discrete_sequence=['#FFD700'],
+                        color_discrete_sequence=['#254AA5'],
                         title='Bowling Analyze',
                         hover_data=['W','ECO','Bowler']
                     )
@@ -215,7 +215,7 @@ if menu == 'Analysis':
                         ECO_1,
                         x='Bowler',
                         y='ECO',
-                        color_discrete_sequence=['#FFD700'],
+                        color_discrete_sequence=['#254AA5'],
                         title='Bowling Analyze',
                         hover_data=['W','ECO','Bowler']
                     )
@@ -269,7 +269,7 @@ if menu == 'Analysis':
                     Bowl_2,
                     x='Bowler',
                     y='W', 
-                    color_discrete_sequence=['#254AA5','#CBA92B '],
+                    color_discrete_sequence=['#FFD700','#1C2C5B'],
                     title='Bowling Analyze',
                     hover_data=['W','ECO','Bowler']
                 )
@@ -282,7 +282,7 @@ if menu == 'Analysis':
                     ECO_2,
                     x='Bowler',
                     y='ECO',
-                    color_discrete_sequence=['#254AA5','#CBA92B '],
+                    color_discrete_sequence=['#FFD700','#1C2C5B'],
                     title='Bowling Analyze',
                     hover_data=['W','ECO','Bowler']
                 )
