@@ -19,8 +19,8 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             #background-image: url("https://st2.depositphotos.com/1001941/6345/v/600/depositphotos_63452319-stock-illustration-cricket-sports-concept-with-red.jpg");
-             background-image: url("https://cdn.dnaindia.com/sites/default/files/styles/full/public/2023/03/31/2582506-whatsapp-image-2023-03-31-at-5.07.51-pm.jpeg");
+             background-image: url("https://st2.depositphotos.com/1001941/6345/v/600/depositphotos_63452319-stock-illustration-cricket-sports-concept-with-red.jpg");
+             #background-image: url("https://cdn.dnaindia.com/sites/default/files/styles/full/public/2023/03/31/2582506-whatsapp-image-2023-03-31-at-5.07.51-pm.jpeg");
              background-attachment: fixed;
              background-size: cover
          }}
@@ -123,10 +123,10 @@ batsmen_df_in2, extras_df_in2, total_df_in2, bowlers_df_in2 = innings2(df_inning
 
 
 if menu == 'Team Scorecard':
-    Teams = ["CSK","GT"]
+    Teams = ["RR","CSK"]
     Team_Selection = st.selectbox('Select the Team:', options= Teams)
 
-    if Team_Selection == 'CSK':
+    if Team_Selection == 'RR':
     
      
         st.markdown(
@@ -142,7 +142,7 @@ if menu == 'Team Scorecard':
         st.dataframe(total_df_in1)
         st.dataframe(bowlers_df_in1)
 
-    if Team_Selection == 'GT':
+    if Team_Selection == 'CSK':
          st.markdown(
             """
             <button class="button-with-logo">
@@ -161,11 +161,11 @@ if menu == 'Team Scorecard':
 
 if menu == 'Analysis':
             
-        Teams = ["CSK","GT"]
+        Teams = ["RR","CSK"]
 
         Team_Selection = st.selectbox('Select the Team:', options= Teams)
 
-        if Team_Selection == "CSK":
+        if Team_Selection == "RR":
 
             Analyze = ["Top 5 Run Scorer",
                        "Top 5 Wicket Taker",
@@ -183,8 +183,8 @@ if menu == 'Analysis':
             if Analyze_Selection == "Top 5 Run Scorer":
 
                 # Create a scatter plot of the number of balls vs. run rate
-                bar_trace = go.Bar(x=Runs_1["Batsman"], y=Runs_1["Runs"],marker=dict(color='#FFD700'))
-                line_trace = go.Scatter(x=Runs_1["Batsman"], y=Runs_1["Runs"],line=dict(color='#1C2C5B'), yaxis='y2')
+                bar_trace = go.Bar(x=Runs_1["Batsman"], y=Runs_1["Runs"],marker=dict(color='#254AA5'))
+                line_trace = go.Scatter(x=Runs_1["Batsman"], y=Runs_1["Runs"],line=dict(color='#CBA92B'), yaxis='y2')
 
                 layout = go.Layout(
                     title='Bar and Line Chart with Dual Axis',
@@ -225,15 +225,15 @@ if menu == 'Analysis':
 
                 fig = go.Figure(go.Scatter(x = batsmen_df_in1['Batsman'],
                                            y = batsmen_df_in1['SR'],
-                                           line=dict(color='#FFD700'),
-                                           marker=dict(color='#1C2C5B'),
+                                           line=dict(color='#254AA5'),
+                                           marker=dict(color='#CBA92B'),
                                            mode = 'lines+markers'))
                 st.plotly_chart(fig)
              
 
             #-----------------------------------------------------------------#
 
-        if Team_Selection == "GT":
+        if Team_Selection == "CSK":
 
             Analyze = ["Top 5 Run Scorer",
                        "Top 5 Wicket Taker",
@@ -250,8 +250,8 @@ if menu == 'Analysis':
             if Analyze_Selection == "Top 5 Run Scorer":
                 if batsmen_df_in2 is not None:
                     # Create a scatter plot of the number of balls vs. run rate
-                    bar_trace = go.Bar(x=Runs_2["Batsman"], y=Runs_2["Runs"], marker=dict(color='#1B2133'))
-                    line_trace = go.Scatter(x=Runs_2["Batsman"], y=Runs_2["Runs"],line=dict(color='#DBBE6E'), yaxis='y2')
+                    bar_trace = go.Bar(x=Runs_2["Batsman"], y=Runs_2["Runs"], marker=dict(color='#FFD700'))
+                    line_trace = go.Scatter(x=Runs_2["Batsman"], y=Runs_2["Runs"],line=dict(color='#1C2C5B'), yaxis='y2')
 
                     layout = go.Layout(
                         title='Bar and Line Chart with Dual Axis',
@@ -269,7 +269,7 @@ if menu == 'Analysis':
                     Bowl_2,
                     x='Bowler',
                     y='W', 
-                    color_discrete_sequence=['#1B2133','#DBBE6E'],
+                    color_discrete_sequence=['#254AA5','#CBA92B '],
                     title='Bowling Analyze',
                     hover_data=['W','ECO','Bowler']
                 )
@@ -282,7 +282,7 @@ if menu == 'Analysis':
                     ECO_2,
                     x='Bowler',
                     y='ECO',
-                    color_discrete_sequence=['#1B2133','#DBBE6E'],
+                    color_discrete_sequence=['#254AA5','#CBA92B '],
                     title='Bowling Analyze',
                     hover_data=['W','ECO','Bowler']
                 )
@@ -292,8 +292,8 @@ if menu == 'Analysis':
                 if batsmen_df_in2 is not None:
                     fig = go.Figure(go.Scatter(x = batsmen_df_in2['Batsman'],
                                             y = batsmen_df_in2['SR'],
-                                            line=dict(color='#1B2133'),
-                                            marker=dict(color='#DBBE6E'),
+                                            line=dict(color='#FFD700'),
+                                            marker=dict(color='#1C2C5B'),
                                             mode = 'lines+markers'))
                     st.plotly_chart(fig)
                 
